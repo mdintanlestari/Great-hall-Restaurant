@@ -1,8 +1,1 @@
 @import "tailwindcss";
-
-@theme {
-  --color-hitam: #fff;
-}
-
-@apply {
-}

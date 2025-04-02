@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Menu - Great Hall Restaurant</title>
+  </head>
+  <body>
+    <div class="bg-cover bg-gray-100">
+      <!-- Menu dan Logo Restaurant -->
+      <div class="md:flex items-center ml-20 pt-4 justify-between mb-5 pr-10">
+        <!-- Checkbox untuk toggle menu -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+        <!-- Burger Button -->
+        <label
+          for="menu-toggle"
+          class="block md:hidden cursor-pointer float-right mt-2.5"
+        >
+          <div class="w-8 h-1 bg-gray-800 mb-1 transition duration-300"></div>
+          <div class="w-8 h-1 bg-gray-800 mb-1 transition duration-300"></div>
+          <div class="w-8 h-1 bg-gray-800 transition duration-300"></div>
+        </label>
+
+        <div class="flex items-center gap-2">
+          <img
+            src="https://mllj2j8xvfl0.i.optimole.com/w:512/h:512/q:mauto/f:best/ig:avif/https://demosites.io/restaurant-gb/wp-content/uploads/sites/445/2020/12/restaurant-logo-2.png"
+            alt="Restaurant Logo"
+            class="w-10 h-10"
+          />
+          <a href="index.html" class="font-bold text-lg md:text-2xl"
+            >Great Hall Restaurant</a
+          >
+        </div>
+
+        <!-- Menu -->
+        <div
+          class="hidden text-center peer-checked:flex md:flex-col top-16 left-0 w-full shadow-md md:static md:flex md:shadow-none md:w-auto"
+        >
+          <ul
+            class="flex flex-col items-center md:flex-row md:text-left w-auto"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block px-6 py-3 hover:text-red-300 hover:underline underline-offset-8"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="reservation.html"
+                class="block px-6 py-3 hover:text-red-300 hover:underline underline-offset-8"
+                >Reservation</a
+              >
+            </li>
+            <li>
+              <a
+                href="menu.html"
+                class="block px-6 py-3 hover:text-red-300 hover:underline underline-offset-8"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="our-restauran.html"
+                class="block px-6 py-3 hover:text-red-300 hover:underline underline-offset-8"
+                >Our Restaurant</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div
+        class="relative w-full h-96 md:h-full flex flex-col items-center justify-center bg-cover bg-center mb-32"
+      >
+        <div class="absolute inset-0 bg-black/50"></div>
+        <img
+          src="img/menu/header.jpg"
+          alt="background"
+          class="w-full h-screen md:h-[470px] object-cover"
+        />
+        <div
+          class="absolute top-2 text-center text-white p-2 mt-32 md:mt-36 animate-none md:animate-[bounce_2s_ease-in-out_forwards]"
+        >
+          <h1 class="font-bold text-3xl md:text-6xl">Our Menu</h1>
+          <p class="text-2xl mt-10 font-medium">
+            Check out our menu. It gets updated daily!
+          </p>
+        </div>
+      </div>
+
+      <!-- Starter -->
+      <div class="mx-5 md:mx-28 space-y-9 md:space-y-0">
+        <h3 class="text-4xl text-center font-bold mb-14 md:mb-6">Starter</h3>
+        <div class="md:flex md:gap-10 w-full">
+          <!-- starter 1 -->
+          <div
+            class="bg-white p-6 max-w-xl max-h-1/2 shadow rounded-lg mb-7 md:mb-10 space-y-10"
+          >
+            <div class="md:flex md:space-x-7 space-y-10 md:space-y-0">
+              <img src="img/menu/menu1.webp" alt="menu1" />
+              <div>
+                <h5 class="font-bold pb-2 text-xl">Neve Green Salad</h5>
+                <p>A tasty vegan snack with the right flavours</p>
+              </div>
+              <p class="font-bold text-xl">$12.55</p>
+            </div>
+            <div class="md:flex md:space-x-7 space-y-10 md:space-y-0">
+              <img src="img/menu/menu2.webp" alt="menu2" />
+              <div>
+                <h5 class="font-bold pb-2 text-xl">
+                  Duck with Sweet chilli sauce
+                </h5>
+                <p>A tasty vegan snack with the right flavours</p>
+              </div>
+              <p class="font-bold text-xl">$9.40</p>
+            </div>
+            <div class="md:flex md:space-x-7 space-y-10 md:space-y-0">
+              <img src="img/menu/menu3.webp" alt="menu3" />
+              <div>
+                <h5 class="font-bold pb-2 text-xl">Vegan pasta and shrimbs</h5>
+                <p>A tasty vegan snack with the right flavours</p>
+              </div>
+              <p class="font-bold text-xl">$3.55</p>
+            </div>
+          </div>
+          <!-- Starter 2 -->
+          <div
+            class="bg-white p-6 max-w-xl max-h-1/2 shadow rounded-lg mb-7 md:mb-10 space-y-10"
+          >
+            <div class="md:flex md:space-x-7 space-y-10 md:space-y-0">
+              <img src="img/menu/menu4.webp" alt="menu1" />
+              <div>
+                <h5 class="font-bold pb-2 text-xl">
+                  Chef’s pick of ethnic goodies
+                </h5>
+                <p>A tasty vegan snack with the right flavours</p>
+              </div>
+              <p class="font-bold text-xl">$25.40</p>
+            </div>
+            <div class="md:flex md:space-x-7 space-y-10 md:space-y-0">
+              <img src="img/menu/menu5.webp" alt="menu2" />
+              <div>
+                <h5 class="font-bold pb-2 text-xl">
+                  Sweet dessert with cinammon
+                </h5>
+                <p>A tasty vegan snack with the right flavours</p>
+              </div>
+              <p class="font-bold text-xl">$22.00</p>
+            </div>
+            <div class="md:flex md:space-x-7 space-y-10 md:space-y-0">
+              <img src="img/menu/menu6.webp" alt="menu3" />
+              <div>
+                <h5 class="font-bold pb-2 text-xl">Buritos</h5>
+                <p>A tasty vegan snack with the right flavours</p>
+              </div>
+              <p class="font-bold text-xl">$6.55</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chef Suggestion  -->
+      <div class="mx-10 md:mx-28">
+        <h3 class="text-4xl font-bold text-center mb-10 mt-28">
+          Chef’s suggestions Picks
+        </h3>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 text-center justify-center gap-10 items-center"
+        >
+          <div
+            class="bg-white p-6 max-w-md shadow rounded-lg mb-7 md:mb-10 space-y-3"
+          >
+            <img
+              src="img/menu/menu7.webp"
+              alt="menu7"
+              class="mx-auto w-full h-[300px] object-cover"
+            />
+            <h5 class="font-bold text-2xl mb-8">
+              Rib Steak with Spicy herbs sauce and onions
+            </h5>
+            <p class="font-bold text-xl mb-8">$ 30,00</p>
+            <p>
+              A great plate with healthy ingredients, suitable for vegans too.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 max-w-md shadow rounded-lg mb-7 md:mb-10 space-y-3"
+          >
+            <img
+              src="img/menu/menu8.webp"
+              alt="menu8"
+              class="mx-auto w-full h-[300px] object-cover"
+            />
+            <h5 class="font-bold text-2xl mb-8">
+              Vegan friendly pasta with Rice Noodles
+            </h5>
+            <p class="font-bold text-xl mb-8">$ 23,33</p>
+            <p>
+              A great plate with healthy ingredients, suitable for vegans too.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 max-w-md shadow rounded-lg mb-7 md:mb-10 space-y-3"
+          >
+            <img
+              src="img/menu/menu9.png"
+              alt="menu9"
+              class="mx-auto w-full h-[300px] object-cover"
+            />
+            <h5 class="font-bold text-2xl mb-8">
+              Vegan friendly pasta with Rice Noodles
+            </h5>
+            <p class="font-bold text-xl mb-8">$ 30,23</p>
+            <p>
+              A great plate with healthy ingredients, suitable for vegans too.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Dishes -->
+      <div class="mx-5 md:mx-28 space-y-9 md:space-y-0">
+        <h3 class="text-4xl text-center font-bold mb-14 md:mb-6">
+          Main Dishes
+        </h3>
+        <div class="md:flex md:gap-10 w-full">
+          <!-- main 1 -->
+          <div
+            class="bg-white p-6 max-w-xl max-h-1/2 shadow rounded-lg mb-7 md:mb-10 space-y-14"
+          >
+            <div class="md:flex md:space-x-7 space-y-10 md:space-y-0">
+              <img src="img/menu/menu10.webp" alt="menu10" class="h-20 w-24" />
+              <div>
+                <h5 class="font-bold pb-2 text-xl">Pan-Seared Strip Steaks</h5>
+                <p>
+                  Perfectly pan-seared strip steaks with a rich and flavorful
+                  crust.
+                </p>
+              </div>
+              <p class="font-bold text-xl">$40.50</p>
+            </div>
+            <div class="md:flex md:space-x-7 space-y-10 md:space-y-0">
+              <img src="img/menu/menu11.png" alt="menu11" class="h-20 w-24" />
+              <div>
+                <h5 class="font-bold pb-2 text-xl">Steak Diane</h5>
+                <p>This retro dinner starts with beef tenderloin filets.</p>
+              </div>
+              <p class="font-bold text-xl">$29.30</p>
+            </div>
+            <div class="md:flex md:space-x-7 space-y-10 md:space-y-0">
+              <img src="img/menu/menu12.png" alt="menu3" class="h-20 w-24" />
+              <div>
+                <h5 class="font-bold pb-2 text-xl">Mississippi Pork Chops</h5>
+                <p>
+                  Tender and juicy pork chops slow-cooked with a savory
+                  Mississippi-style seasoning.
+                </p>
+              </div>
+              <p class="font-bold text-xl">$25.00</p>
+            </div>
+          </div>
+          <!-- main 2 -->
+          <div
+            class="bg-white p-6 max-w-xl max-h-1/2 shadow rounded-lg mb-7 md:mb-10 space-y-10"
+          >
+            <div class="md:flex md:space-x-7 space-y-10 md:space-y-0">
+              <img src="img/menu/menu13.webp" alt="menu13" class="h-20 w-24" />
+              <div>
+                <h5 class="font-bold pb-2 text-xl">Smothered Pork Chops</h5>
+                <p>
+                  Deliciously tender pork chops covered in a rich and savory
+                  onion gravy.
+                </p>
+              </div>
+              <p class="font-bold text-xl">$25.40</p>
+            </div>
+            <div class="md:flex md:space-x-7 space-y-10 md:space-y-0">
+              <img src="img/menu/menu14.png" alt="menu14" class="h-20 w-24" />
+              <div>
+                <h5 class="font-bold pb-2 text-xl">Supreme Pizza</h5>
+                <p>
+                  A classic pizza loaded with pepperoni, sausage, bell peppers,
+                  onions, and olives.
+                </p>
+              </div>
+              <p class="font-bold text-xl">$30.00</p>
+            </div>
+            <div class="md:flex md:space-x-7 space-y-10 md:space-y-0">
+              <img src="img/menu/menu15.webp" alt="menu15" class="h-20 w-24" />
+              <div>
+                <h5 class="font-bold pb-2 text-xl">Corned Beef Hash</h5>
+                <p>
+                  A hearty dish made with crispy potatoes, savory corned beef,
+                  and perfectly fried eggs.
+                </p>
+              </div>
+              <p class="font-bold text-xl">$32.55</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-black md:grid md:grid-cols-3 text-white px-3 md:px-28 gap-14 pt-6 pb-10"
+      >
+        <div>
+          <h3 class="font-bold pb-3">Great Hall Restaurant</h3>
+          <p>
+            Celebrate your every day dining in beautiful atmosphere of our
+            restaurant. Exquisite & creative cousine, friendly atmosphere and
+            highly professional staff will make your special day beautiful &
+            enjoyable.
+          </p>
+        </div>
+        <div class="space-y-2 ml-0 md:ml-20 hidden md:block">
+          <h3>Social follow</h3>
+          <a href="https://www.facebook.com/">
+            <p>Facebook</p>
+          </a>
+          <a href="https://x.com/">
+            <p>Twitter</p>
+          </a>
+          <a href="https://www.instagram.com/">
+            <p>Instagram</p>
+          </a>
+        </div>
+        <div class="hidden md:block">
+          <h3 class="font-bold pb-3">Contact Us</h3>
+          <p>21 Jump Street. New York City</p>
+          <p>0030 728772</p>
+        </div>
+      </div>
+      <div class="bg-black text-white text-center py-10 hidden md:block">
+        <p>copyright ©2025 Great Hall Restaurant - All rights reserved.</p>
+      </div>
+      <div class="block md:hidden bg-black text-white pb-5">
+        <ul class="flex gap-4 text-center justify-center items-center">
+          <li class="hover:text-red-700">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="hover:text-red-700">
+            <a href="reservation.html">Reservation</a>
+          </li>
+          <li class="hover:text-red-700">
+            <a href="menu.html">Menu</a>
+          </li>
+          <li class="hover:text-red-700">
+            <a href="our-restauran.html">Our Restaurant</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

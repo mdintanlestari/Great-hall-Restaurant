@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Our Restaurant - Great Hall Restaurant</title>
+  </head>
+  <body>
+    <div class="bg-cover bg-gray-100">
+      <!-- Menu dan Logo Restaurant -->
+      <div class="md:flex items-center ml-20 pt-4 justify-between mb-5 pr-10">
+        <!-- Checkbox untuk toggle menu -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+        <!-- Burger Button -->
+        <label
+          for="menu-toggle"
+          class="block md:hidden cursor-pointer float-right mt-2.5"
+        >
+          <div class="w-8 h-1 bg-gray-800 mb-1 transition duration-300"></div>
+          <div class="w-8 h-1 bg-gray-800 mb-1 transition duration-300"></div>
+          <div class="w-8 h-1 bg-gray-800 transition duration-300"></div>
+        </label>
+
+        <div class="flex items-center gap-2">
+          <img
+            src="https://mllj2j8xvfl0.i.optimole.com/w:512/h:512/q:mauto/f:best/ig:avif/https://demosites.io/restaurant-gb/wp-content/uploads/sites/445/2020/12/restaurant-logo-2.png"
+            alt="Restaurant Logo"
+            class="w-10 h-10"
+          />
+          <a href="index.html" class="font-bold text-lg md:text-2xl"
+            >Great Hall Restaurant</a
+          >
+        </div>
+
+        <!-- Menu -->
+        <div
+          class="hidden text-center peer-checked:flex md:flex-col top-16 left-0 w-full shadow-md md:static md:flex md:shadow-none md:w-auto"
+        >
+          <ul
+            class="flex flex-col items-center md:flex-row md:text-left w-auto"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block px-6 py-3 hover:text-red-300 hover:underline underline-offset-8"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="reservation.html"
+                class="block px-6 py-3 hover:text-red-300 hover:underline underline-offset-8"
+                >Reservation</a
+              >
+            </li>
+            <li>
+              <a
+                href="menu.html"
+                class="block px-6 py-3 hover:text-red-300 hover:underline underline-offset-8"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="our-restauran.html"
+                class="block px-6 py-3 hover:text-red-300 hover:underline underline-offset-8"
+                >Our Restaurant</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div
+        class="relative w-full h-96 md:h-full flex flex-col items-center justify-center bg-cover bg-center mb-32"
+      >
+        <div class="absolute inset-0 bg-black/50"></div>
+        <img
+          src="img/our-restaurant/header.jpg"
+          alt="background"
+          class="w-full h-screen md:h-[470px] object-cover"
+        />
+        <div class="absolute top-2 text-center text-white p-2 mt-32 md:mt-36 animate-none md:animate-[bounce_2s_ease-in-out_forwards]">
+          <h1 class="font-bold text-3xl md:text-6xl">Our Restaurant</h1>
+          <p class="text-2xl mt-10 font-medium">
+            A relaxing place in the heart of the city!
+          </p>
+        </div>
+      </div>
+
+      <!-- History -->
+      <div class="mx-10 md:mx-28 mb-28">
+        <h1 class="text-4xl font-bold text-center mb-5">
+          A place with a history worth sharing!
+        </h1>
+        <p class="text-center text-xl mb-20">
+          Celebrate your every day dining in beautiful atmosphere of our
+          restaurant. Exquisite & creative cousine, friendly atmosphere and
+          highly professional staff will make your special day beautiful &
+          enjoyable.
+        </p>
+        <div class="md:flex space-x-0 md:space-x-20">
+          <div class="space-y-3 w-1/2 mb-10 md:mb-0">
+            <div class="flex space-x-3">
+              <img src="img/our-restaurant/photo1.webp" alt="photo1" />
+              <img src="img/our-restaurant/photo2.webp" alt="photo2" />
+            </div>
+            <div class="flex space-x-3">
+              <img src="img/our-restaurant/photo3.webp" alt="photo3" />
+              <img src="img/our-restaurant/photo4.webp" alt="photo4" />
+            </div>
+          </div>
+          <div>
+            <img
+              src="img/our-restaurant/photo5.webp"
+              alt="photo5"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Review -->
+      <div class="mx-5 md:mx-28 text-center">
+        <h2 class="text-2xl md:text-4xl font-bold mb-5">Customers love our Restaurant</h2>
+        <p class="text-xl md:text-2xl  mb-14">10 years of experience and practice</p>
+        <div class="md:flex md:space-x-10">
+            <div class="bg-white p-6 max-w-xl max-h-1/2 shadow rounded-lg mb-7 md:mb-10 space-y-10">
+                <div class="text-yellow-500 mt-5">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="-mt-5">
+                  “… I love this restaurant. Quite my type of food and awesome
+                  service. Quality is fantastic, prices are reasonable and staff very
+                  friendly. Recommended!”
+                  <img src="img/our-restaurant/person1.webp" alt="person1" class="mx-auto rounded-full mt-5">
+                  <p class="font-bold -mt-5">JOHN DOSH</p>
+                </p>
+              </div>
+              <div class="bg-white p-6 max-w-xl max-h-1/2 shadow rounded-lg mb-7 md:mb-10 space-y-10">
+                <div class="text-yellow-500 mt-5">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="-mt-5">
+                    “…I just love being and having dinner there for all the reasons you imagine! Awesome restaurant! Great customer service and quality!…”
+                  <img src="img/our-restaurant/person2.webp" alt="person2" class="mx-auto rounded-full mt-5">
+                  <p class="font-bold -mt-5">GEORGE ANISTON</p>
+                </p>
+              </div>
+        </div>
+      </div>
+
+      <!-- Event -->
+      <div class="md:grid md:grid-cols-2 mx-5 md:mx-28 gap-11 my-20 ">
+        <div>
+            <img src="img/our-restaurant/photo6.webp" alt="photo6" class="w-full h-full object-cover">
+        </div>
+        <div>
+            <h3 class="mt-28 text-3xl font-bold mb-5">Weddings & Events</h3>
+            <p class="text-xl ">Celebrate your special day in beautiful atmosphere of our restaurant. Exquisite & creative cousine, friendly atmosphere and highly professional staff will make your special day beautiful & enjoyable.</p>
+            <button  class="mt-10 border-0 bg-red-400 border-red-400 px-10 py-5 font-bold cursor-pointer hover:bg-amber-400">
+                <a href="menu.html">OUR MENU</a>
+            </button>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div
+        class="bg-black md:grid md:grid-cols-3 text-white px-3 md:px-28 gap-14 pt-6 pb-10"
+      >
+        <div>
+          <h3 class="font-bold pb-3">Great Hall Restaurant</h3>
+          <p>
+            Celebrate your every day dining in beautiful atmosphere of our
+            restaurant. Exquisite & creative cousine, friendly atmosphere and
+            highly professional staff will make your special day beautiful &
+            enjoyable.
+          </p>
+        </div>
+        <div class="space-y-2 ml-0 md:ml-20 hidden md:block" >
+          <h3>Social follow</h3>
+          <a href="https://www.facebook.com/">
+            <p>Facebook</p>
+          </a>
+          <a href="https://x.com/">
+            <p>Twitter</p>
+          </a>
+          <a href="https://www.instagram.com/">
+            <p>Instagram</p>
+          </a>
+        </div>
+        <div class="hidden md:block">
+          <h3 class="font-bold pb-3">Contact Us</h3>
+          <p>21 Jump Street. New York City</p>
+          <p>0030 728772</p>
+        </div>
+      </div>
+      <div class="bg-black text-white text-center py-10 hidden md:block">
+        <p>copyright ©2025 Great Hall Restaurant - All rights reserved.</p>
+      </div>
+      <div class="block md:hidden bg-black text-white pb-5">
+        <ul class="flex gap-4 text-center justify-center items-center ">
+          <li class="hover:text-red-700">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="hover:text-red-700">
+            <a href="reservation.html">Reservation</a>
+          </li>
+          <li class="hover:text-red-700">
+            <a href="menu.html">Menu</a>
+          </li>
+          <li class="hover:text-red-700">
+            <a href="our-restauran.html">Our Restaurant</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

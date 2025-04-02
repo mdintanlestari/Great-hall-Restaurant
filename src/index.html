@@ -5,58 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
-    <title>Restaurant</title>
+    <link rel="stylesheet" />
+    <title>Great Hall Restaurant</title>
   </head>
   <body>
-    <div class="bg-gray-200">
+    <div class="bg-cover bg-gray-100">
       <!-- Menu dan Logo Restaurant -->
-      <div class="flex items-center ml-20 mt-5 justify-between mb-5 pr-10">
+      <div class="md:flex items-center ml-20 pt-4 justify-between mb-5 pr-10">
+        <!-- Checkbox untuk toggle menu -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+        <!-- Burger Button -->
+        <label
+          for="menu-toggle"
+          class="block md:hidden cursor-pointer float-right mt-2.5"
+        >
+          <div class="w-8 h-1 bg-gray-800 mb-1 transition duration-300"></div>
+          <div class="w-8 h-1 bg-gray-800 mb-1 transition duration-300"></div>
+          <div class="w-8 h-1 bg-gray-800 transition duration-300"></div>
+        </label>
+
         <div class="flex items-center gap-2">
           <img
-            src="https://mllj2j8xvfl0.i.optimole.com/w:512/h:512/q:mauto/f:best/ig:avif/https://demosites.io/restaurant-gb/wp-content/uploads/sites/445/2020/12/restaurant-logo-2.png"
+            src="img/home/logo.webp"
             alt="Restaurant Logo"
             class="w-10 h-10"
           />
-          <a href="" class="font-bold text-2xl">Restaurant</a>
+          <a href="index.html" class="font-bold text-lg md:text-2xl"
+            >Great Hall Restaurant</a
+          >
         </div>
 
-        <!-- Navbar Menu -->
-        <div class="flex gap-8 mr-30">
-          <a
-            href="#"
-            class="hover:text-red-300 hover:underline underline-offset-8"
-            >Home</a
+        <!-- Menu -->
+        <div
+          class="hidden text-center peer-checked:flex md:flex-col top-16 left-0 w-full shadow-md md:static md:flex md:shadow-none md:w-auto"
+        >
+          <ul
+            class="flex flex-col items-center md:flex-row md:text-left w-auto"
           >
-          <a
-            href="#"
-            class="hover:text-red-300 hover:underline underline-offset-8"
-            >Reservation</a
-          >
-          <a
-            href="#menu"
-            class="hover:text-red-300 hover:underline underline-offset-8"
-            >Menu</a
-          >
-          <a
-            href="#"
-            class="hover:text-red-300 hover:underline underline-offset-8"
-            >Our Restaurant</a
-          >
+            <li>
+              <a
+                href="index.html"
+                class="block px-6 py-3 hover:text-red-300 hover:underline underline-offset-8"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="reservation.html"
+                class="block px-6 py-3 hover:text-red-300 hover:underline underline-offset-8"
+                >Reservation</a
+              >
+            </li>
+            <li>
+              <a
+                href="menu.html"
+                class="block px-6 py-3 hover:text-red-300 hover:underline underline-offset-8"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="our-restauran.html"
+                class="block px-6 py-3 hover:text-red-300 hover:underline underline-offset-8"
+                >Our Restaurant</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
 
       <!-- Hero Section -->
       <div
-        class="relative w-full h-full flex flex-col items-center justify-center bg-cover bg-center"
+        class="relative w-full h-screen md:h-full flex flex-col items-center justify-center bg-cover bg-center"
       >
         <div class="absolute inset-0 bg-black/50"></div>
         <img
-          src="https://demosites.io/neve-restaurant-gb/wp-content/uploads/sites/445/2019/05/neve-restaurant-header1.jpg"
-          alt="background"
+          src="img/home/header.jpg"
+          alt="header"
           class="w-full h-full object-cover"
         />
-        <div class="absolute top-2 left-1/5 text-white p-2 mt-40">
-          <h1 class="font-extrabold text-6xl">
+        <div
+          class="absolute top-2 md:left-1/5 md:text-left text-white p-2 mt-40 animate-none md:animate-[bounce_2s_ease-in-out_forwards]"
+        >
+          <h1 class="font-bold text-3xl md:text-6xl">
             The best Ethnic Cusine is <br />served here
           </h1>
           <p class="text-2xl mt-10 font-medium">
@@ -64,7 +96,7 @@
             friendly people <br />
             and beautiful Ethnic dishes.
           </p>
-          <a href="#menu">
+          <a href="menu.html">
             <button
               class="mt-10 border-0 bg-red-400 border-red-400 px-10 py-5 font-bold cursor-pointer hover:bg-amber-400"
             >
@@ -75,13 +107,19 @@
       </div>
 
       <!-- Map -->
-      <div class="flex flex-col md:flex-row items-stretch mx-28">
+      <div
+        class="md:flex md:flex-row md:items-stretch mx-0 md:mx-28 relative top-0 md:-top-20"
+      >
         <div class="w-full md:w-1/2">
-          <img
-            src="https://demosites.io/restaurant-gb/wp-content/uploads/sites/445/2019/07/harta.png"
-            alt="map"
-            class="object-cover w-full h-[370px]"
-          />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.111600322859!2d-73.99718372430317!3d40.715559674190175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a2847c9c061%3A0x106b4cf24157356f!2s21%20Allen%20St%2C%20New%20York%2C%20NY%2010002%2C%20Amerika%20Serikat!5e0!3m2!1sid!2sid!4v1743199926012!5m2!1sid!2sid"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
         <div
           class="w-full md:w-1/2 bg-black text-white p-8 flex flex-col justify-center"
@@ -90,54 +128,210 @@
             Come visit us at the centre of the city!
           </h2>
           <p class="text-2xl font-medium mb-10">
-            21 Jump Street. New York City
+            21 Allen Street. New York City
           </p>
           <p class="text-2xl font-medium">0030 728772</p>
         </div>
       </div>
 
       <!-- Today's Menu -->
-      <div class="grid grid-cols-3 mt-32">
-        <div class="mx-24">
+      <div
+        class="md:grid md:grid-cols-3 gap-8 mt-14 px-8 items-center mx-0 md:mx-14"
+      >
+        <div class="text-center lg:text-left mx-auto md:-mt-40">
           <h2 class="text-4xl font-medium mb-10">Today's Menu</h2>
-          <p class="mb-7">
+          <p class="text-2xl">
             Our chef is preparing fresh dishes every day, check what is in the
             menu today!
           </p>
-          <a href="#menu">
+          <a href="menu.html">
             <button
-              class="mt-10 border-0 bg-red-400 border-red-400 text-white px-10 py-5 font-bold cursor-pointer hover:bg-amber-400"
+              class="mt-0 md:mt-10 border-0 bg-red-400 border-red-400 text-white px-10 py-5 font-bold cursor-pointer hover:bg-amber-400 mb-10 md:mb-0"
             >
               OUR MENU
             </button>
           </a>
         </div>
-        <div class="bg-white p-6 max-w-sm mx-auto text-center">
+        <div
+          class="bg-white p-6 max-w-sm mx-auto text-center shadow rounded-lg mb-7 md:mb-0"
+        >
           <img
-            src="https://mllj2j8xvfl0.i.optimole.com/w:337/h:320/q:mauto/f:best/ig:avif/https://demosites.io/restaurant-gb/wp-content/uploads/sites/445/2019/05/neve-restaurant-menu1.jpg"
-            alt="pasta"
-            class="w-full h-auto mx-auto"
+            src="img/home/menu1.webp"
+            class="w-full h-[300px] object-cover mx-auto"
           />
-          <h3>Vegan friendly pasta with Rice Noodles</h3>
-          <p>$ 23,33</p>
-          <p>
+          <h3 class="text-[20px] font-medium mt-4">
+            Vegan friendly pasta with Rice Noodles
+          </h3>
+          <p class="font-medium mt-6 text-[20px]">$ 23,33</p>
+          <p class="mt-6 mb-10">
             A great plate with healthy ingredients, <br />suitable for vegans
             too.
           </p>
         </div>
-        <div class="bg-white p-6 max-w-sm mx-auto text-center">
+        <div
+          class="bg-white p-6 max-w-sm mx-auto text-center shadow rounded-lg"
+        >
           <img
-            src="https://mllj2j8xvfl0.i.optimole.com/w:217/h:206/q:mauto/f:best/ig:avif/https://demosites.io/restaurant-gb/wp-content/uploads/sites/445/2019/05/neve-restaurant-menu2.jpg"
-            alt="steak"
-            class="w-full h-auto mx-auto"
+            src="img/home/menu2.webp"
+            class="w-full h-[300px] object-cover mx-auto"
           />
-          <h3>Rib Steak with Spicy herbs sauce and onions</h3>
-          <p>$ 30,00</p>
-          <p>
+          <h3 class="text-[20px] font-medium mt-4">
+            Rib Steak with Spicy herbs sauce and onions
+          </h3>
+          <p class="font-medium mt-6 text-[20px]">$ 30,00</p>
+          <p class="mt-6 mb-10">
             A great plate with healthy ingredients, <br />suitable for vegans
             too.
           </p>
         </div>
+      </div>
+
+      <!-- Text -->
+      <div>
+        <div
+          class="flex mt-14 md:mt-40 text-center justify-center items-center"
+        >
+          <i class="fa-solid fa-star text-yellow-400"></i>
+          <i class="fa-solid fa-star text-yellow-400"></i>
+          <i class="fa-solid fa-star text-yellow-400"></i>
+          <i class="fa-solid fa-star text-yellow-400"></i>
+          <i class="fa-solid fa-star text-yellow-400"></i>
+        </div>
+        <div>
+          <p class="text-2xl text-center mt-6">
+            “…I just love being and having dinner there for all the reasons you
+            imagine! Awesome restaurant! <br />
+            Great customer service and quality!…”
+          </p>
+          <div class="flex items-center justify-center">
+            <img
+              src="img/home/person1.webp"
+              alt="person1"
+              class="rounded-full mt-6"
+            />
+          </div>
+          <p
+            class="flex items-center justify-center font-bold mt-6 mb-12 md:mb-44"
+          >
+            JANE DONSON
+          </p>
+        </div>
+      </div>
+
+      <!-- Gallery -->
+      <div class="bg-black text-white pb-28 pt-14 md:pt-32 mx-auto">
+        <h2 class="text-4xl text-center font-bold mb-6">Our photo gallery</h2>
+        <p class="text-2xl text-center font-medium mb-20">
+          Get inspired and get ready!
+        </p>
+        <div class="flex flex-wrap gap-7 justify-center">
+          <img
+            src="img/home/photo1.jpg"
+            alt="menu1"
+            class="w-[250px] h-[250px] object-cover"
+          />
+          <img
+            src="img/home/photo2.webp"
+            alt="menu2"
+            class="w-[250px] h-[250px] object-cover"
+          />
+          <img
+            src="img/home/photo3.webp"
+            alt="menu3"
+            class="w-[250px] h-[250px] object-cover"
+          />
+          <img
+            src="img/home/photo4.webp"
+            alt="menu"
+            class="w-[250px] h-[250px] object-cover"
+          />
+        </div>
+        <div class="flex flex-wrap gap-7 justify-center mt-7">
+          <img
+            src="img/home/photo5.webp"
+            alt="menu5"
+            class="w-[250px] h-[250px] object-cover"
+          />
+          <img
+            src="img/home/photo6.webp"
+            alt="menu6"
+            class="w-[250px] h-[250px] object-cover"
+          />
+          <img
+            src="img/home/photo7.webp"
+            alt="menu7"
+            class="w-[250px] h-[250px] object-cover"
+          />
+          <img
+            src="img/home/photo8.webp"
+            alt="menu8"
+            class="w-[250px] h-[250px] object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- Reservation -->
+      <div class="text-center my-32">
+        <h2 class="text-4xl font-bold mb-5">Book a Table Now</h2>
+        <p class="text-2xl font-medium mb-16">
+          Enjoy the best dining experience with online reservations.
+        </p>
+        <a
+          href="reservation.html"
+          class="mt-10 border-0 bg-red-400 border-red-400 text-white px-10 py-5 font-bold cursor-pointer hover:bg-amber-400"
+        >
+          <button>Make Reservation</button>
+        </a>
+      </div>
+
+      <div
+        class="bg-black md:grid md:grid-cols-3 text-white px-3 md:px-28 gap-14 pt-6 pb-10"
+      >
+        <div>
+          <h3 class="font-bold pb-3">Great Hall Restaurant</h3>
+          <p>
+            Celebrate your every day dining in beautiful atmosphere of our
+            restaurant. Exquisite & creative cousine, friendly atmosphere and
+            highly professional staff will make your special day beautiful &
+            enjoyable.
+          </p>
+        </div>
+        <div class="space-y-2 ml-0 md:ml-20 hidden md:block">
+          <h3>Social follow</h3>
+          <a href="https://www.facebook.com/">
+            <p>Facebook</p>
+          </a>
+          <a href="https://x.com/">
+            <p>Twitter</p>
+          </a>
+          <a href="https://www.instagram.com/">
+            <p>Instagram</p>
+          </a>
+        </div>
+        <div class="hidden md:block">
+          <h3 class="font-bold pb-3">Contact Us</h3>
+          <p>21 Jump Street. New York City</p>
+          <p>0030 728772</p>
+        </div>
+      </div>
+      <div class="bg-black text-white text-center py-10 hidden md:block">
+        <p>copyright ©2025 Great Hall Restaurant - All rights reserved.</p>
+      </div>
+      <div class="block md:hidden bg-black text-white pb-5">
+        <ul class="flex gap-4 text-center justify-center items-center">
+          <li class="hover:text-red-700">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="hover:text-red-700">
+            <a href="reservation.html">Reservation</a>
+          </li>
+          <li class="hover:text-red-700">
+            <a href="menu.html">Menu</a>
+          </li>
+          <li class="hover:text-red-700">
+            <a href="our-restauran.html">Our Restaurant</a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>

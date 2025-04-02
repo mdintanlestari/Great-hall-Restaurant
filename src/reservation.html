@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Reservation - Great Hall Restaurant</title>
+  </head>
+  <body>
+    <div class="bg-cover bg-gray-100">
+      <!-- Menu dan Logo Restaurant -->
+      <div class="md:flex items-center ml-20 pt-4 justify-between mb-5 pr-10">
+        <!-- Checkbox untuk toggle menu -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+        <!-- Burger Button -->
+        <label
+          for="menu-toggle"
+          class="block md:hidden cursor-pointer float-right mt-2.5"
+        >
+          <div class="w-8 h-1 bg-gray-800 mb-1 transition duration-300"></div>
+          <div class="w-8 h-1 bg-gray-800 mb-1 transition duration-300"></div>
+          <div class="w-8 h-1 bg-gray-800 transition duration-300"></div>
+        </label>
+
+        <div class="flex items-center gap-2">
+          <img
+            src="https://mllj2j8xvfl0.i.optimole.com/w:512/h:512/q:mauto/f:best/ig:avif/https://demosites.io/restaurant-gb/wp-content/uploads/sites/445/2020/12/restaurant-logo-2.png"
+            alt="Restaurant Logo"
+            class="w-10 h-10"
+          />
+          <a href="index.html" class="font-bold text-lg md:text-2xl"
+            >Great Hall Restaurant</a
+          >
+        </div>
+
+        <!-- Menu -->
+        <div
+          class="hidden text-center peer-checked:flex md:flex-col top-16 left-0 w-full shadow-md md:static md:flex md:shadow-none md:w-auto"
+        >
+          <ul
+            class="flex flex-col items-center md:flex-row md:text-left w-auto"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block px-6 py-3 hover:text-red-300 hover:underline underline-offset-8"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="reservation.html"
+                class="block px-6 py-3 hover:text-red-300 hover:underline underline-offset-8"
+                >Reservation</a
+              >
+            </li>
+            <li>
+              <a
+                href="menu.html"
+                class="block px-6 py-3 hover:text-red-300 hover:underline underline-offset-8"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="our-restauran.html"
+                class="block px-6 py-3 hover:text-red-300 hover:underline underline-offset-8"
+                >Our Restaurant</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div
+        class="relative w-full h-96 md:h-full flex flex-col items-center justify-center bg-cover bg-center mb-32"
+      >
+        <div class="absolute inset-0 bg-black/50"></div>
+        <img
+          src="https://mllj2j8xvfl0.i.optimole.com/w:auto/h:auto/q:mauto/f:best/ig:avif/https://demosites.io/restaurant-gb/wp-content/uploads/sites/445/2022/10/neve-restaurant-reservation-header-234.jpeg"
+          alt="background"
+          class="w-full h-screen md:h-[470px] object-cover"
+        />
+        <div
+          class="absolute top-2 text-center text-white p-2 mt-32 md:mt-36 animate-none md:animate-[bounce_2s_ease-in-out_forwards]"
+        >
+          <h1 class="font-bold text-3xl md:text-6xl">Make a Reservation</h1>
+          <p class="text-2xl mt-10 font-medium">
+            Book your table by using the form below
+          </p>
+        </div>
+      </div>
+
+      <!-- Reservation -->
+      <div class="flex-none md:flex mx-10 md:mx-28 gap-40">
+        <div class="mb-24">
+          <!-- Contact -->
+          <h2 class="text-4xl font-bold mb-6">Contact Information</h2>
+          <div class="flex gap-40 md:text-xl">
+            <div class="mb-5 space-y-4">
+              <h4 class="text-xl font-bold">Address</h4>
+              <p>Brancusi 105,</p>
+              <p>6511 Bucharest</p>
+            </div>
+            <div class="mb-5 space-y-4">
+              <h4 class="text-xl font-bold">Contact</h4>
+              <p>Tel: 012 317 14 23</p>
+              <p>great@hall.com</p>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <h2 class="text-4xl font-bold mb-8 mt-10">Serving Hours</h2>
+          <div class="flex gap-44 text-xl">
+            <div class="mb-6 space-y-[71px] md:space-y-12 font-bold">
+              <p>Monday</p>
+              <p>Tuesday</p>
+              <p>Wednesday</p>
+              <p>Thursday</p>
+              <p>Friday</p>
+              <p>Saturday</p>
+              <p>Sunday</p>
+            </div>
+            <div class="mb-6 space-y-12">
+              <p>11:00 AM – 12:00 PM</p>
+              <p>11:00 AM – 12:00 PM</p>
+              <p>11:00 AM – 12:00 PM</p>
+              <p>11:00 AM – 12:00 PM</p>
+              <p>11:00 AM – 12:00 PM</p>
+              <p>Closed</p>
+              <p>Closed</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Book Table -->
+        <div
+          class="bg-white p-6 max-w-md shadow rounded-lg mb-7 md:mb-10 space-y-3"
+        >
+          <h2 class="text-4xl font-bold mb-6">Book your Table</h2>
+          <div>
+            <label for="fName" class="mb-3 block">First Name</label>
+            <input
+              type="text"
+              name="fName"
+              id="fName"
+              class="border-2 text-gray-300 h-10 w-[400px]"
+            />
+          </div>
+          <div>
+            <label for="lName" class="mb-3 block">Last Name</label>
+            <input
+              type="text"
+              name="lName"
+              id="lName"
+              class="border-2 text-gray-300 h-10 w-full"
+            />
+          </div>
+          <div>
+            <label for="phone" class="mb-3 block">Phone</label>
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              class="border-2 text-gray-300 h-10 w-full"
+            />
+          </div>
+          <div>
+            <label for="email" class="mb-3 block">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="border-2 text-gray-300 h-10 w-full"
+            />
+          </div>
+          <div>
+            <label for="comment">Message</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="40"
+              class="border-2 text-gray-300 h-48 w-full"
+            ></textarea>
+          </div>
+          <button
+            class="mt-0 md:mt-10 border-0 bg-red-400 border-red-400 text-white px-10 py-5 font-bold cursor-pointer hover:bg-amber-400 mb-10 md:mb-0"
+          >
+            Make Reservation
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="bg-black md:grid md:grid-cols-3 text-white px-3 md:px-28 gap-14 pt-6 pb-10"
+      >
+        <div>
+          <h3 class="font-bold pb-3">Great Hall Restaurant</h3>
+          <p>
+            Celebrate your every day dining in beautiful atmosphere of our
+            restaurant. Exquisite & creative cousine, friendly atmosphere and
+            highly professional staff will make your special day beautiful &
+            enjoyable.
+          </p>
+        </div>
+        <div class="space-y-2 ml-0 md:ml-20 hidden md:block">
+          <h3>Social follow</h3>
+          <a href="https://www.facebook.com/">
+            <p>Facebook</p>
+          </a>
+          <a href="https://x.com/">
+            <p>Twitter</p>
+          </a>
+          <a href="https://www.instagram.com/">
+            <p>Instagram</p>
+          </a>
+        </div>
+        <div class="hidden md:block">
+          <h3 class="font-bold pb-3">Contact Us</h3>
+          <p>21 Jump Street. New York City</p>
+          <p>0030 728772</p>
+        </div>
+      </div>
+      <div class="bg-black text-white text-center py-10 hidden md:block">
+        <p>copyright ©2025 Great Hall Restaurant - All rights reserved.</p>
+      </div>
+      <div class="block md:hidden bg-black text-white pb-5">
+        <ul class="flex gap-4 text-center justify-center items-center">
+          <li class="hover:text-red-700">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="hover:text-red-700">
+            <a href="reservation.html">Reservation</a>
+          </li>
+          <li class="hover:text-red-700">
+            <a href="menu.html">Menu</a>
+          </li>
+          <li class="hover:text-red-700">
+            <a href="our-restauran.html">Our Restaurant</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
